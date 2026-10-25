@@ -1,0 +1,18 @@
+{
+  "name": "yaani-tasima",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "YaaniMail (mailim.com) -> Titan mail taşıma",
+  "scripts": {
+    "export": "node --env-file=.env export.mjs",
+    "import:dry": "DRY_RUN=1 node --env-file=.env import.mjs",
+    "import": "node --env-file=.env import.mjs"
+  },
+  "dependencies": {
+    "imapflow": "^1.0.164"
+  },
+  "engines": {
+    "node": ">=20.6"
+  }
+}
